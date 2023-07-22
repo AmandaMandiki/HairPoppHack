@@ -11,16 +11,16 @@ export default function Age() {
   }
 
   return (
-  <div className="flex flex-col w-full">
-    <div className="justify-center m-">
+  <div className="flex flex-col w-full m-10 p-10">
+    <div className="justify-center m-10 p-10">
       <h1>What's your Age?</h1>
-      <div className="flex flex-row justify-items-center items-center content-center">
+      <div className="flex flex-row justify-center items-end">
         <img class="object-contain h-48 w-96" src={adult_icon} alt="Adult Icon" />
-        <img class="object-contain h-48 w-96" src={child_icon} alt="Child Icon" />
+        <img class="object-contain h-32 w-64" src={child_icon} alt="Child Icon" />
       </div>
       <div onChange={onChangeValue}>
-        <input className="m-10" type="radio" value="Adult" name="age" checked={age === "Adult"} /> Adult
-        <input className="m-10" type="radio" value="Child" name="age" checked={age === "Child"}/> Child
+        <input className="m-5" type="radio" value="Adult" name="age" checked={age === "Adult"} /> Adult
+        <input className="m-5" type="radio" value="Child" name="age" checked={age === "Child"}/> Child
       </div>
       <Button className='rounded-none'>Next</Button>
     </div>
