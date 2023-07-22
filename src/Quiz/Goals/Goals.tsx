@@ -34,7 +34,7 @@ export default function Goals() {
      },
    ];
   return (
-    <div>
+    <div className="m-20">
       <span className="text-4xl"> Select your hair goals </span>
       <div className="mx-40 flex flex-wrap justify-center">
         {Goals.map(({ type, value, detail }) => (

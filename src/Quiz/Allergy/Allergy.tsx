@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Allergy() {
   const [Allergy, setAllergy] = useState("No"); 
@@ -13,12 +14,28 @@ export default function Allergy() {
       <div className="justify-center m-10 p-10">
         <h1>Do you have an Allergy?</h1>
         <div onChange={onChangeValue}>
-          <input className="m-10" type="radio" value="Allergy_Yes" name="Allergy_Yes" checked={Allergy === "Allergy_Yes"} /> Yes I have an allergy
-          <input className="m-10" type="radio" value="Allergy_No" name="Allergy_No" checked={Allergy === "Allergy_No"} /> No I don't have an allery
+          <input
+            className="m-10"
+            type="radio"
+            value="Allergy_Yes"
+            name="Allergy_Yes"
+            checked={Allergy === "Allergy_Yes"}
+          />{" "}
+          Yes I have an allergy
+          <input
+            className="m-10"
+            type="radio"
+            value="Allergy_No"
+            name="Allergy_No"
+            checked={Allergy === "Allergy_No"}
+          />{" "}
+          No I don't have an allery
         </div>
-        <Button className='rounded-none'>Next</Button>
+        <Link to="/HairType">
+          <Button className="rounded-none">Next</Button>
+        </Link>
       </div>
-  </div>
+    </div>
   );
 }
 

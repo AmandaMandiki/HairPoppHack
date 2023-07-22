@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Concerns() {
   const concernsType = [
@@ -25,7 +26,7 @@ export default function Concerns() {
   ];
 
   return (
-    <div>
+    <div className="m-20">
       <span className="text-4xl"> Select your hair type </span>
       <div className="mx-40 flex flex-wrap justify-center">
         {concernsType.map(({ type, value, detail }) => (
@@ -39,6 +40,7 @@ export default function Concerns() {
             </div>
           </div>
         ))}
+        <Link to='/Concerns'><button>Next</button></Link>
       </div>
     </div>
   );
