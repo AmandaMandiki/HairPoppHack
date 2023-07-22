@@ -20,7 +20,7 @@ export default function Concerns() {
     {
       type: "Type 4 - Coily Hair",
       value: null,
-      detail: "Hair with 'Z'-shaped coils that has a less or no defined curl pattern.",
+      detail: "Hair with 'Z'-shaped coils that has less or no defined curl pattern.",
     },
   ];
 
