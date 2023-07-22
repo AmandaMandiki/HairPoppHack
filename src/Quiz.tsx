@@ -11,7 +11,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 export default function Quiz() {
   return (
-    <div className="float-left">
+    <div>
       <BrowserRouter>
         <Routes>
           <Route path="/Hellopage" index element={<HelloPage />} />
