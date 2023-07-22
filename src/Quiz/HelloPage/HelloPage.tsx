@@ -10,7 +10,7 @@ export default function HelloPage() {
         Welcome to the Hair Popp Quiz
       </h1>
       <h1 className="text-lg mt-2 leading-tight">
-        A quiz formulated to help you discover your dream hair care products
+        A quiz formulated to help you discover your dream hair care products for your hair type
       </h1>
       <div className="mt-9 bg-purple-500 text-white px-8 py-4 rounded-lg cursor-pointer text-base my-4">
         Click here to continue
