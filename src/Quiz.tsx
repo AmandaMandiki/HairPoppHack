@@ -14,7 +14,7 @@ export default function Quiz() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/Hellopage" index element={<HelloPage />} />
+          <Route path="/" index element={<HelloPage />} />
           <Route path="/Allergy" index element={<Allergy />} />
           <Route path="/Concerns" index element={<Concerns />} />
           <Route path="/Goals" index element={<Goals />} />
